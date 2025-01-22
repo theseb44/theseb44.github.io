@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Experience.css">
+    <title>Sebastian Enamorado</title>
+</head>
+
+<body>
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-15 items-center justify-between">
+                <!-- Home button -->
+                <div class="flex items-center">
+                    <a href="#"class="rounded-md px-5 py-3 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+                </div>
+
+                <!-- Centered menu -->
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-8">
+                            <!-- Menu items -->
+                            <a href="#about-me", data-key="nav1"
+                                class="rounded-md px-5 py-3 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About
+                                me</a>
+                            <a href="#skills", data-key="skillsTitle"
+                                class="rounded-md px-5 py-3 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Skills</a>
+                            <a href="#experience", data-key="Experiencia"
+                                class="rounded-md px-5 py-3 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Experience</a>
+                            <a href="#projects", data-key="projectsTitle"
+                                class="rounded-md px-5 py-3 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                            <a href="#contact", data-key="contactTitle"
+                                class="rounded-md px-5 py-3 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+                            <button id="language-toggle" 
+                                class="rounded-md px-5 py-3 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white" 
+                                aria-label="Change Language">Español</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <canvas id="ai-background"></canvas>
+
+    <section id="about-me" class="fondo">
+      <h1 data-key="aboutTitle"></h1>
+      <p data-key="aboutDescription"></p>
+      
+    </section>
+
+
+    <section id="experience" class="experience fondo">
+      <h1 data-key="Experiencia" class="sectionTitle"></h1>
+
+      <article class="job">
+        <h2>BackEnd developer </h2>
+        <p><strong>CooWeb LLC</strong> 02/07/2023 – 11/01/2024</p>
+        <ul>
+          <li data-key="job1Descri1" ></li>
+          <li data-key="job1Descri2" ></li>
+        </ul>
+      </article>
+
+    </section>
+
+
+
+    <section id="skills" class="skills-section fondo">
+      <h2 data-key="skillsTitle" class="section-title">Skills</h2>
+      <div class="skills-container">
+    
+        <div class="skill-category">
+          <h3 data-key="progTitle" class="category-title">Programming Languages</h3>
+          <ul class="skills-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>SQL</li>
+            <li>PL/SQL</li>
+          </ul>
+        </div>
+    
+        <div class="skill-category">
+          <h3 data-key="devTools" class="category-title">Development Tools</h3>
+          <ul class="skills-list">
+            <li>Git</li>
+            <li>Node.js</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+    
+        <div class="skill-category">
+          <h3 data-key="AI" class="category-title">Data Science & AI</h3>
+          <ul class="skills-list">
+            <li>Regression Models</li>
+            <li>Classification Models</li>
+            <li>Clustering Models</li>
+            <li>Data Preprocessing Techniques</li>
+            <li>scikit-learn</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3 data-key="certifications" class="category-title"></h3>
+          <ul class="skills-list">
+            <li><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-e31fe99d-acd5-44ed-a6ec-4528443f6f5d.pdf" target="_blank" class="text-blue-500 hover:text-blue-700 hover:underline">Machine Learning course</a></li>
+            <li><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-74e14334-e6d9-4749-8dcb-771b10abf6c2.pdf" target="_blank" class="text-blue-500 hover:text-blue-700 hover:underline">Node.js</a></li>
+          </ul>
+        </div>
+    
+      </div>
+    </section>
+    
+    
+      
+      
+
+    <section id="projects" class="projects-section fondo">
+      <h1 data-key="projectsTitle" ></h1>
+      <div class="projects-container">
+        <!-- Tarjeta de Proyecto -->
+        <div class="project-card">
+          <h2 data-key="projects1Title"></h2>
+          <p data-key="projects1descri"></p>
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>scikit-learn</li>
+            <li>Logistic Regression</li>
+          </ul>
+          <div class="card-buttons">
+            <a href="https://github.com/theseb44/Breast-cancer-prediction" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h2 data-key="projects2Title"></h2>
+          <p  data-key="projects2descri"></p>
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Numpy</li>
+          </ul>
+          <div class="card-buttons">
+            <a href="https://github.com/theseb44/Naive-Bayes-Tweet-Classifier" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h2 data-key="projects3Title"></h2>
+          <p data-key="projects3descri"></p>
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+          </ul>
+          <div class="card-buttons">
+            <a href="https://github.com/theseb44/Exploratory-Data-Analysis-Superstore-Sales" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+        
+        <!-- Añade más tarjetas de proyecto aquí -->
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section fondo">
+      <h1 data-key="contactTitle"></h1>
+      <p data-key="contactDescription"></p>
+      <div class="social-links">
+        <a href="mailto:theseb242@gmail.com">theseb242@gmail.com</a>
+        <a href="https://github.com/theseb44" target="_blank">GitHub</a>
+        <a href="www.linkedin.com/in/sebastian-enamorado-cerchar-9b0705226" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+    
+    
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="Background.js"></script>
+    <script src="navigation.js"></script>
+    <script src="language.js"></script>
+</body>
+
+</html>
